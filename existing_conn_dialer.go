@@ -20,7 +20,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/michaelquigley/pfxlog"
-	"github.com/openziti/identity"
+	"github.com/hanzozt/identity"
 	"net"
 	"time"
 )

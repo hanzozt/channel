@@ -27,9 +27,9 @@ import (
 	"time"
 
 	"github.com/michaelquigley/pfxlog"
-	"github.com/openziti/foundation/v2/concurrenz"
-	"github.com/openziti/foundation/v2/info"
-	"github.com/openziti/foundation/v2/sequence"
+	"github.com/hanzozt/foundation/v2/concurrenz"
+	"github.com/hanzozt/foundation/v2/info"
+	"github.com/hanzozt/foundation/v2/sequence"
 	"github.com/pkg/errors"
 )
 

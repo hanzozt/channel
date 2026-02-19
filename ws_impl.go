@@ -20,8 +20,8 @@ import (
 	"crypto/x509"
 	"errors"
 	"fmt"
-	"github.com/openziti/identity"
-	"github.com/openziti/transport/v2"
+	"github.com/hanzozt/identity"
+	"github.com/hanzozt/transport/v2"
 	"sync"
 	"time"
 )

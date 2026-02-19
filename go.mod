@@ -1,4 +1,4 @@
-module github.com/openziti/channel/v4
+module github.com/hanzozt/channel/v4
 
 go 1.24.0
 
@@ -8,9 +8,9 @@ require (
 	github.com/google/uuid v1.6.0
 	github.com/gorilla/websocket v1.5.3
 	github.com/michaelquigley/pfxlog v0.6.10
-	github.com/openziti/foundation/v2 v2.0.87
-	github.com/openziti/identity v1.0.125
-	github.com/openziti/transport/v2 v2.0.209
+	github.com/hanzozt/foundation/v2 v2.0.87
+	github.com/hanzozt/identity v1.0.125
+	github.com/hanzozt/transport/v2 v2.0.209
 	github.com/pkg/errors v0.9.1
 	github.com/sirupsen/logrus v1.9.4
 	github.com/spf13/cobra v1.10.2
@@ -29,8 +29,8 @@ require (
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d // indirect
 	github.com/miekg/pkcs11 v1.1.1 // indirect
-	github.com/openziti-incubator/cf v0.0.3 // indirect
-	github.com/openziti/dilithium v0.3.5 // indirect
+	github.com/hanzozt-incubator/cf v0.0.3 // indirect
+	github.com/hanzozt/dilithium v0.3.5 // indirect
 	github.com/parallaxsecond/parsec-client-go v0.0.0-20221025095442-f0a77d263cf9 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/speps/go-hashids v2.0.0+incompatible // indirect

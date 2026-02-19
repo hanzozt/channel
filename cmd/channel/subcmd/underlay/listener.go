@@ -19,9 +19,9 @@ package underlay
 import (
 	"fmt"
 	"github.com/michaelquigley/pfxlog"
-	"github.com/openziti/channel/v4"
-	"github.com/openziti/identity/dotziti"
-	"github.com/openziti/transport/v2"
+	"github.com/hanzozt/channel/v4"
+	"github.com/hanzozt/identity/dotziti"
+	"github.com/hanzozt/transport/v2"
 	"github.com/spf13/cobra"
 	"time"
 )

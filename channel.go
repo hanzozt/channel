@@ -19,7 +19,7 @@ package channel
 import (
 	"context"
 	"crypto/x509"
-	"github.com/openziti/transport/v2"
+	"github.com/hanzozt/transport/v2"
 	"github.com/pkg/errors"
 	"io"
 	"net"

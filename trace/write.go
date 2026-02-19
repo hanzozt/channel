@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"encoding/binary"
 	"errors"
-	"github.com/openziti/channel/v4/trace/pb"
+	"github.com/hanzozt/channel/v4/trace/pb"
 	"google.golang.org/protobuf/proto"
 	"io"
 )

@@ -19,7 +19,7 @@ package channel
 import (
 	"crypto/x509"
 	"fmt"
-	"github.com/openziti/transport/v2"
+	"github.com/hanzozt/transport/v2"
 	"github.com/pkg/errors"
 	"net"
 	"sync/atomic"

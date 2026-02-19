@@ -18,12 +18,12 @@ package main
 
 import (
 	"github.com/michaelquigley/pfxlog"
-	"github.com/openziti/channel/v4/cmd/channel/subcmd"
-	"github.com/openziti/transport/v2"
-	"github.com/openziti/transport/v2/tcp"
-	"github.com/openziti/transport/v2/tls"
-	"github.com/openziti/transport/v2/transwarp"
-	"github.com/openziti/transport/v2/wss"
+	"github.com/hanzozt/channel/v4/cmd/channel/subcmd"
+	"github.com/hanzozt/transport/v2"
+	"github.com/hanzozt/transport/v2/tcp"
+	"github.com/hanzozt/transport/v2/tls"
+	"github.com/hanzozt/transport/v2/transwarp"
+	"github.com/hanzozt/transport/v2/wss"
 	"github.com/sirupsen/logrus"
 )
 
@@ -32,7 +32,7 @@ func init() {
 	transport.AddAddressParser(tls.AddressParser{})
 	transport.AddAddressParser(transwarp.AddressParser{})
 	transport.AddAddressParser(wss.AddressParser{})
-	pfxlog.GlobalInit(logrus.InfoLevel, pfxlog.DefaultOptions().SetTrimPrefix("github.com/openziti/"))
+	pfxlog.GlobalInit(logrus.InfoLevel, pfxlog.DefaultOptions().SetTrimPrefix("github.com/hanzozt/"))
 }
 
 func main() {

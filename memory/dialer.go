@@ -19,8 +19,8 @@ package memory
 import (
 	"fmt"
 	"github.com/michaelquigley/pfxlog"
-	"github.com/openziti/channel/v4"
-	"github.com/openziti/identity"
+	"github.com/hanzozt/channel/v4"
+	"github.com/hanzozt/identity"
 	"time"
 )
 

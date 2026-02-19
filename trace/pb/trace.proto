@@ -17,7 +17,7 @@
 syntax = "proto3";
 
 package ziti.trace.pb;
-option go_package = "github.com/openziti/channel/trace/pb/trace_pb";
+option go_package = "github.com/hanzozt/channel/trace/pb/trace_pb";
 
 
 enum MessageType {

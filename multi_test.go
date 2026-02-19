@@ -26,10 +26,10 @@ import (
 	"time"
 
 	"github.com/michaelquigley/pfxlog"
-	"github.com/openziti/foundation/v2/goroutines"
-	"github.com/openziti/identity"
-	"github.com/openziti/transport/v2"
-	"github.com/openziti/transport/v2/tcp"
+	"github.com/hanzozt/foundation/v2/goroutines"
+	"github.com/hanzozt/identity"
+	"github.com/hanzozt/transport/v2"
+	"github.com/hanzozt/transport/v2/tcp"
 	"github.com/stretchr/testify/require"
 )
 
