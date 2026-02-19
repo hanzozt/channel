@@ -16,7 +16,7 @@
 
 syntax = "proto3";
 
-package ziti.trace.pb;
+package zt.trace.pb;
 option go_package = "github.com/hanzozt/channel/trace/pb/trace_pb";
 
 

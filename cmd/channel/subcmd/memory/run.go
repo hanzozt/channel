@@ -22,13 +22,13 @@ import (
 	"github.com/hanzozt/channel/v4/cmd/channel/subcmd"
 	"github.com/hanzozt/channel/v4/memory"
 	"github.com/hanzozt/identity"
-	"github.com/hanzozt/identity/dotziti"
+	"github.com/hanzozt/identity/dotzt"
 	"github.com/spf13/cobra"
 	"time"
 )
 
 func init() {
-	memoryCmd.Flags().StringVarP(&memoryIdentity, "identity", "i", "default", ".ziti Identity")
+	memoryCmd.Flags().StringVarP(&memoryIdentity, "identity", "i", "default", ".zt Identity")
 	memoryCmd.Flags().IntVarP(&memoryCount, "count", "c", 100, "number of messages to send")
 	subcmd.Root.AddCommand(memoryCmd)
 }
@@ -45,7 +45,7 @@ var listenerDone = make(chan struct{})
 var dialerDone = make(chan struct{})
 
 func runMemory(_ *cobra.Command, _ []string) {
-	_, id, err := dotziti.LoadIdentity(memoryIdentity)
+	_, id, err := dotzt.LoadIdentity(memoryIdentity)
 	if err != nil {
 		panic(err)
 	}

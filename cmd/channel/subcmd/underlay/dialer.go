@@ -20,14 +20,14 @@ import (
 	"fmt"
 	"github.com/michaelquigley/pfxlog"
 	"github.com/hanzozt/channel/v4"
-	"github.com/hanzozt/identity/dotziti"
+	"github.com/hanzozt/identity/dotzt"
 	"github.com/hanzozt/transport/v2"
 	"github.com/spf13/cobra"
 	"time"
 )
 
 func init() {
-	dialer.Flags().StringVarP(&dialerIdentity, "identity", "i", "default", ".ziti Identity")
+	dialer.Flags().StringVarP(&dialerIdentity, "identity", "i", "default", ".zt Identity")
 	dialer.Flags().StringVarP(&dialerEndpointAddress, "endpoint", "e", "tcp:127.0.0.1:9999", "Endpoint address")
 	dialer.Flags().IntVarP(&dialerMessageCount, "count", "c", 100, "Message count")
 	dialer.Flags().IntVarP(&dialerSleepMs, "sleep", "s", 50, "Sleep (ms) between messages")
@@ -47,7 +47,7 @@ var dialerSleepMs int
 var dialerUnderlay string
 
 func runDialer(_ *cobra.Command, _ []string) {
-	_, id, err := dotziti.LoadIdentity(dialerIdentity)
+	_, id, err := dotzt.LoadIdentity(dialerIdentity)
 	if err != nil {
 		panic(err)
 	}

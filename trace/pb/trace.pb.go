@@ -329,7 +329,7 @@ type TogglePipeTracesRequest struct {
 	unknownFields protoimpl.UnknownFields
 
 	Enable    bool                 `protobuf:"varint,1,opt,name=enable,proto3" json:"enable,omitempty"`
-	Verbosity TraceToggleVerbosity `protobuf:"varint,2,opt,name=verbosity,proto3,enum=ziti.trace.pb.TraceToggleVerbosity" json:"verbosity,omitempty"`
+	Verbosity TraceToggleVerbosity `protobuf:"varint,2,opt,name=verbosity,proto3,enum=zt.trace.pb.TraceToggleVerbosity" json:"verbosity,omitempty"`
 	AppRegex  string               `protobuf:"bytes,3,opt,name=appRegex,proto3" json:"appRegex,omitempty"`
 	PipeRegex string               `protobuf:"bytes,4,opt,name=pipeRegex,proto3" json:"pipeRegex,omitempty"`
 }
@@ -467,14 +467,14 @@ func file_trace_proto_rawDescGZIP() []byte {
 var file_trace_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
 var file_trace_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
 var file_trace_proto_goTypes = []interface{}{
-	(MessageType)(0),                // 0: ziti.trace.pb.MessageType
-	(TraceToggleVerbosity)(0),       // 1: ziti.trace.pb.TraceToggleVerbosity
-	(*ChannelState)(nil),            // 2: ziti.trace.pb.ChannelState
-	(*ChannelMessage)(nil),          // 3: ziti.trace.pb.ChannelMessage
-	(*TogglePipeTracesRequest)(nil), // 4: ziti.trace.pb.TogglePipeTracesRequest
+	(MessageType)(0),                // 0: zt.trace.pb.MessageType
+	(TraceToggleVerbosity)(0),       // 1: zt.trace.pb.TraceToggleVerbosity
+	(*ChannelState)(nil),            // 2: zt.trace.pb.ChannelState
+	(*ChannelMessage)(nil),          // 3: zt.trace.pb.ChannelMessage
+	(*TogglePipeTracesRequest)(nil), // 4: zt.trace.pb.TogglePipeTracesRequest
 }
 var file_trace_proto_depIdxs = []int32{
-	1, // 0: ziti.trace.pb.TogglePipeTracesRequest.verbosity:type_name -> ziti.trace.pb.TraceToggleVerbosity
+	1, // 0: zt.trace.pb.TogglePipeTracesRequest.verbosity:type_name -> zt.trace.pb.TraceToggleVerbosity
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

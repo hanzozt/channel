@@ -20,14 +20,14 @@ import (
 	"fmt"
 	"github.com/michaelquigley/pfxlog"
 	"github.com/hanzozt/channel/v4"
-	"github.com/hanzozt/identity/dotziti"
+	"github.com/hanzozt/identity/dotzt"
 	"github.com/hanzozt/transport/v2"
 	"github.com/spf13/cobra"
 	"time"
 )
 
 func init() {
-	listener.Flags().StringVarP(&listenerIdentity, "identity", "i", "default", ".ziti Idenitity")
+	listener.Flags().StringVarP(&listenerIdentity, "identity", "i", "default", ".zt Idenitity")
 	listener.Flags().StringVarP(&listenerEndpointAddress, "endpoint", "e", "tcp:127.0.0.1:9999", "Endpoint address")
 	listener.Flags().IntVarP(&listenerMessageCount, "count", "c", 200, "Message count")
 	listener.Flags().IntVarP(&listenerSleepMs, "sleep", "s", 50, "Sleep (ms) between messages")
@@ -47,7 +47,7 @@ var listenerSleepMs int
 var listenerUnderlay string
 
 func runListener(_ *cobra.Command, _ []string) {
-	_, id, err := dotziti.LoadIdentity(listenerIdentity)
+	_, id, err := dotzt.LoadIdentity(listenerIdentity)
 	if err != nil {
 		panic(err)
 	}
