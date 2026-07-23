@@ -7,10 +7,10 @@ toolchain go1.24.1
 require (
 	github.com/google/uuid v1.6.0
 	github.com/gorilla/websocket v1.5.3
+	github.com/hanzozt/foundation/v2 v2.0.88
+	github.com/hanzozt/identity v1.0.126
+	github.com/hanzozt/transport/v2 v2.0.210
 	github.com/michaelquigley/pfxlog v0.6.10
-	github.com/hanzozt/foundation/v2 v2.0.87
-	github.com/hanzozt/identity v1.0.125
-	github.com/hanzozt/transport/v2 v2.0.209
 	github.com/pkg/errors v0.9.1
 	github.com/sirupsen/logrus v1.9.4
 	github.com/spf13/cobra v1.10.2
@@ -23,14 +23,14 @@ require (
 	github.com/emirpasic/gods v1.18.1 // indirect
 	github.com/fsnotify/fsnotify v1.8.0 // indirect
 	github.com/gorilla/mux v1.8.1 // indirect
+	github.com/hanzozt/cf v0.0.4 // indirect
+	github.com/hanzozt/dilithium v0.3.6 // indirect
 	github.com/iancoleman/strcase v0.3.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d // indirect
 	github.com/miekg/pkcs11 v1.1.1 // indirect
-	github.com/hanzozt-incubator/cf v0.0.3 // indirect
-	github.com/hanzozt/dilithium v0.3.5 // indirect
 	github.com/parallaxsecond/parsec-client-go v0.0.0-20221025095442-f0a77d263cf9 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/speps/go-hashids v2.0.0+incompatible // indirect
